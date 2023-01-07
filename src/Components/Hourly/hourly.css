@@ -1,0 +1,55 @@
+#forecast {
+    color: var(--white);
+    background: var(--mediumblue);
+    text-align: center;
+    padding: 20px;
+}
+
+#city-title {
+    font-size: 50px;
+}
+
+#wicon {
+    background: var(--white);
+    border: 4px solid var(--darkblue);
+    border-radius: 50%;
+}
+
+.font-color {
+    color: var(--offwhiteblue);
+    font-size: 30px;
+}
+
+.hourly-forecast {
+    display: inline-flex;
+    max-width: 40vw;
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 4px solid var(--darkblue);
+    border-radius: 10px;
+}
+
+.hours {
+    border-right: 2px solid var(--mediumblue);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--mediumblue);
+    background: var(--white);
+    width: 80px;
+    height: 80px;
+}
+
+.hours:last-child {
+    border-right: 0;
+}
+
+.flex-grow-1 {
+    animation-delay: 2.5s;
+}
+
+@media only screen and (max-width: 610px) {
+    .hourly-forecast {
+        max-width: 60vw;
+    }
+}

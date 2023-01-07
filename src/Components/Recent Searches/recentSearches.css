@@ -1,0 +1,107 @@
+.before-search-bar-recents {
+    color: var(--white);
+    background: var(--lightblue);
+    text-align: center;
+    width: 100%;
+}
+
+.after-search-bar-recents {
+    color: var(--white);
+    background: var(--lightblue);
+    text-align: center;
+    max-width: 220px;
+    margin-right: 20px;
+    animation-delay: 2s;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#insert-recent-buttons {
+    display: inline-flex;
+    flex-direction: column;
+    max-height: 30vw;
+    overflow-y: auto;
+    white-space: nowrap;
+    border-top: 2px solid var(--darkblue);
+    border-bottom: 2px solid var(--darkblue);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 7px;
+}
+
+.entry {
+    background: var(--offwhiteblue);
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+    width: 120px;
+    height: auto;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    white-space: normal;
+}
+
+.entry:hover {
+    background: var(--mediumblue);
+    color: var(--darkblue);
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+    width: 120px;
+    height: auto;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form-label {
+    margin-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.form-text {
+    width: 10rem;
+    margin: 0 auto;
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+}
+
+#search-button {
+    width: 10rem;
+    margin: 10px auto;
+    border: 2px solid var(--darkblue);
+    border-radius: 8px;
+    color: var(--darkblue);
+}
+
+@media only screen and (max-width: 610px) {
+    .after-search-bar-recents {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .form-text {
+        width: 15rem;
+        border: 2px solid var(--darkblue);
+        border-radius: 8px;
+    }
+
+    #search-button {
+        width: 15rem;
+        border: 2px solid var(--darkblue);
+        border-radius: 8px;
+        color: var(--darkblue);
+    }
+}

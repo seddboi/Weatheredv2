@@ -1,0 +1,24 @@
+#five-day-section {
+    color: var(--white);
+    background: var(--darkblue);
+    margin: 20px;
+    text-align: center;
+}
+
+#five-day-forecast {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.three-day-title {
+    padding: 10px;
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.jumbotron {
+    animation-delay: 3s;
+}

@@ -1,0 +1,32 @@
+:root {
+    --white: #ffff;
+    --offwhiteblue: #E4E6FF;
+    --black: #000;
+    --lightblue: #B6BFE8;
+    --mediumblue: #97A4DD;
+    --darkblue: #7585CB;
+}
+
+#heading-title {
+    color: var(--white);
+    background: var(--black);
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px var(--darkblue), 0px 0px 17px var(--darkblue);
+}
+
+#container-fluid {
+    width: 100%;
+}
+
+#center-page {
+    margin: 9px;
+}
+
+@media only screen and (max-width: 610px) {
+    #center-page {
+        display: flex;
+        flex-direction: column;
+    }
+}
