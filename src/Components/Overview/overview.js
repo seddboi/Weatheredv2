@@ -18,9 +18,10 @@ export function Overview() {
     async function fetchForecast(searchedCity) {
 
         await axios.get(
-            'https://xenodochial-noether-dfbd01.netlify.app/forecast',
+            'http://api.weatherapi.com/v1/forecast.json',
             {params: {
                 q: searchedCity,
+                key: process.env.REACT_APP_API_KEY,
                 days: 3
             }}
         ).then((response) => {
