@@ -18,7 +18,7 @@ export function Overview() {
     async function fetchForecast(searchedCity) {
 
         await axios.get(
-            'http://api.weatherapi.com/v1/forecast.json',
+            'https://api.weatherapi.com/v1/forecast.json',
             {params: {
                 q: searchedCity,
                 key: process.env.REACT_APP_API_KEY,
