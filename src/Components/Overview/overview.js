@@ -15,16 +15,17 @@ export function Overview() {
 		fetchForecast(searchedCity);
 	};
 
-	const serverLink = 'https://web-production-642b.up.railway.app/';
+	const serverLink = `https://web-production-642b.up.railway.app/forecast?`;
 
-	async function fetchForecast(searchedCity) {
-		await axios
+	function fetchForecast(searchedCity) {
+		axios
 			.get(serverLink, {
 				params: {
 					q: searchedCity,
 				},
 			})
 			.then((response) => {
+				console.log(response);
 				setForecast(response.data);
 			})
 			.catch((error) => {
