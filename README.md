@@ -12,7 +12,7 @@ Weathered is a simple React application that takes in a city and it returns the 
 For the frontend, I used React, with simple state variables and slightly more complex Javascript, I was able to organize all of my code onto the page as you see above! The backend is s simple server that hosts a "forecast" page, which posts whatever JSON information is returned from the WeatherAPI. This is when the main component sends a get request amd retrieves said information from the "forecast" page, and applies it to the page!
 
 # Here is the link: 
-Live Link: https://clinquant-dieffenbachia-128d9b.netlify.app/
+Live Link: https://weatheredd.netlify.app
 
 # License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
