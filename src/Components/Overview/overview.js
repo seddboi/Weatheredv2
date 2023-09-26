@@ -15,7 +15,7 @@ export function Overview() {
 		fetchForecast(searchedCity);
 	};
 
-	const serverLink = 'https://weatheredd.app/forecast';
+	const serverLink = 'https://web-production-642b.up.railway.app/';
 
 	async function fetchForecast(searchedCity) {
 		await axios
